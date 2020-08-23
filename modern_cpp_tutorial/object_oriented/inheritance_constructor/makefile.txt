@@ -1,0 +1,8 @@
+CXX = clang++
+SOURCE_CXX = foo.cpp
+TARGET = foo
+LDFLAGS_COMMON = -std=c++2a
+all:
+	$(CXX) $(SOURCE_CXX) $(LDFLAGS_COMMON) -o $(TARGET)
+clean:
+	rm -rf *.o $(TARGET)
